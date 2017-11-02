@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+API documentation
+ | CodeCook.io</title>
+	<meta name="description" content="
+The CodeCook.io API makes it possible to search for and insert snippets directly into your work. | CodeCook.io
+">
+
+	<meta charset="utf-8"/>
+
+	<link rel="shortcut icon" href="/static/favicon/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/static/favicon/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/apple-touch-icon-152x152.png" />
+
+	
+
+	<!--[if lt IE 9]>
+	<script>
+	(function (d, a) {
+	d.documentElement.className = 'lt-ie9'; var l = a.length; while(l-=1){ d.createElement(a[l]); }
+	}(document, ['HEADER', 'NAV', 'TIME', 'SECTION', 'FOOTER', 'ARTICLE', 'MAIN', 'FIGCAPTION', 'FIGURE', 'ASIDE']));
+	</script>
+	<![endif]-->
+
+	<script>(function (e) { e.className = e.className.replace('no-js', 'js'); }(document.documentElement));</script>
+
+	<link rel="stylesheet" href="/static/CACHE/css/01e70f7c834a.css" type="text/css" />
+
+    
+<link rel="stylesheet" href="/static/CACHE/css/78d265f2464a.css" type="text/css" />
+</head>
+<body>
+	
+	<div class="footer-down-wrapper">
+		<div class="content">
+			<header role="banner" class="navbar navbar-inverse">
+				
+
+
+
+
+
+				
+<nav role="navigation">
+	<h2 class="sr-only">Site menu</h2>
+	<div class="navbar-header">
+		<a href="/" class="navbar-brand">
+			<h2 class="navbar-title">CodeCook.io</h2>
+		</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<!--googleoff: index-->
+			<span class="sr-only">Toggle site menu</span>
+			<i class="fa fa-bars"></i>
+			<!--googleon: index -->
+		</button>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					
+						
+							<li>
+								<a href="/specification/7/c/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-c"></div>
+								</span>C</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/2/cplusplus/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-cplusplus"></div>
+								</span>C++</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/11/css/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-css"></div>
+								</span>CSS</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/27/git/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-git"></div>
+								</span>Git</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/16/html/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-html"></div>
+								</span>HTML</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/3/java/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-java"></div>
+								</span>Java</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/5/javascript/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-javascript"></div>
+								</span>JavaScript</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/6/jquery/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-jquery"></div>
+								</span>jQuery</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/8/php/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-php"></div>
+								</span>PHP</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/4/python/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-python"></div>
+								</span>Python</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/29/ruby/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-ruby"></div>
+								</span>Ruby</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/28/scala/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-scala"></div>
+								</span>Scala</a>
+							</li>
+						
+					
+				</ul>
+			</li>
+
+			
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			
+			<li>
+					
+				
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+
+			</header>
+
+			
+
+			
+			<main>
+				
+
+
+<article class="optimal-line-width">
+	<div class="block">
+		<header>
+			<h1>CodeCook.io API</h1>
+		</header>
+		<p>The application programming interface (API) exposes nearly all code on our website. This allows code from the site to be directly inserted into your work. Look at how to <a href="#api-accesss">access the API</a> or view the <a href="#resources">resources</a>.</p>
+	</div>
+	<section class="block">
+		
+<h2 id="api-accesss"><a class="permalink" href="#api-accesss">API accesss</a></h2>
+		<p>
+			The API is still under heavy development. You can access this it via the url "http://codecook.io/api/dev/". We will do our best to keep the interface stable, but things will change. If you use the API, please <a href="/contact/">let us know</a> and we will keep you posted on changes.</p>
+		
+<h3 id="authentication"><a class="permalink" href="#authentication">Authentication</a></h3>
+		
+		<p>Currently all access to the API requires an user account and API key. Your API key can be found on your user profile page.</p>
+		<p>When requesting a resource from the API you need to identify yourself by adding the following GET parameters to the request:</p>
+		<ul>
+			<li>username=[username]</li>
+			<li>api_key=[api_key]</li>
+		</ul>
+		<p>For example, a request including authentication for user "johndoe" with API key "g9sda17fgd35sdfg9823as5" is:
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/concept/1/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+
+		
+<h3 id="fair-use"><a class="permalink" href="#fair-use">Fair use</a></h3>
+		<p>Feel free to use the API. You are free to do almost anything with it. We will however take action if either the requests rate is through the roof or when we feel the usage is not in line with our (very permissive) <a href="/license">license</a>.</p>
+		<p>Do try to keep the requests rate low. For example if you imlement a interactive search field that updates search results as you type, perform a lookup only after input has not changed for a small fraction of time (not every character change). This allows us to keep response times high for everyone.</p>
+	</section>
+
+	<section class="block">
+		
+<h2 id="usage"><a class="permalink" href="#usage">Usage</a></h2>
+		<p>A REST API is exposed through the domain codecook.io. Currently most aspects are available for reading through the API. Create and update actions are still in early stages of development. Valid request to the server returns a JSON file.
+		<p>The API url is:</p>
+			<pre rel="nofollow"><code>http://codecook.io/api/dev/</code></pre>
+		<p>You can try querying a page in directly from the (linux) command line:</p>
+		<pre rel="nofollow"><code>curl http://codecook.io/api/dev/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+		<p>Or use your browser and navigate to the page:</p>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"&amp;format=json</code></pre>
+		<p>For a list of available resource see <a href="#resources">resources</a>.
+	</section>
+
+	<section class="block">
+		
+<h2 id="resources"><a class="permalink" href="#resources">Resources</a></h2>
+		<p>All data is returned as JSON and look roughly the same. A list of resources will be returned as "objects" possibly with a "meta" section that contains pagination information. Single resources generally contain more data for that specific resource.</p>
+        <p>Here are some example endpoints with their corresponding replies:</p>
+		<ul>
+			<li><a href="#schemas">Top level schema</a></li>
+			<li><a href="#search-concepts">Search concept</a></li>
+			<li><a href="#concept-list">Concept list</a></li>
+			<li><a href="#concept-detail">Concept detail</a></li>
+			<li><a href="#method-detail">Method detail</a></li>
+		</ul>
+
+		
+<h3 id="schemas"><a class="permalink" href="#schemas">Schemas</a></h3>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+<pre rel="nofollow"><code>{
+    "concept": {
+        "list_endpoint": "/api/dev/concept/",
+        "schema": "/api/dev/concept/schema/"
+    },
+    "method": {
+        "list_endpoint": "/api/dev/method/",
+        "schema": "/api/dev/method/schema/"
+    },
+    "snippet": {
+        "list_endpoint": "/api/dev/snippet/",
+        "schema": "/api/dev/snippet/schema/"
+    }
+}
+</code></pre>
+
+<h3 id="search-concepts"><a class="permalink" href="#search-concepts">Search concepts</a></h3>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/search/?query="loop"&amp;username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+<pre rel="nofollow"><code>{
+    "objects": [
+        {
+            "id": 7,
+            "name": "For each loop",
+            "resource_uri": "/api/dev/concept/7/"
+        },
+        {
+            "id": 44,
+            "name": "Break out of loop",
+            "resource_uri": "/api/dev/concept/44/"
+        },
+        {
+            "id": 1,
+            "name": "Counter loop",
+            "resource_uri": "/api/dev/concept/1/"
+        }
+    ]
+}
+</code></pre>
+
+		
+<h3 id="concept-list"><a class="permalink" href="#concept-list">Concept list</a></h3>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/concept/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+<pre rel="nofollow"><code>{
+    "meta": {
+        "limit": 20,
+        "next": "/api/dev/concept/?limit=20&amp;offset=20",
+        "offset": 0,
+        "previous": null,
+        "total_count": 79
+    },
+    "objects": [
+        {
+            "id": 1,
+            "name": "Counter loop",
+            "resource_uri": "/api/dev/concept/1/"
+        },
+        {
+            "id": 2,
+            "name": "String concatenation",
+            "resource_uri": "/api/dev/concept/2/"
+        },
+
+        ...
+
+        {
+            "id": 21,
+            "name": "Bold text",
+            "resource_uri": "/api/dev/concept/21/"
+        }
+    ]
+}
+</code></pre>
+
+		
+<h3 id="concept-detail"><a class="permalink" href="#concept-detail">Concept detail.</a></h3>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/concept/1/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+<pre rel="nofollow"><code>{
+    "id": 1,
+    "methods": [
+        "/api/dev/method/2/",
+        "/api/dev/method/13/",
+        "/api/dev/method/47/",
+        "/api/dev/method/135/",
+        "/api/dev/method/160/",
+        "/api/dev/method/178/",
+        "/api/dev/method/231/"
+    ],
+    "name": "Counter loop",
+    "parameters": [
+        {
+            "default": null,
+            "description": null,
+            "name": "start",
+            "resource_uri": ""
+        },
+        {
+            "default": null,
+            "description": null,
+            "name": "stop",
+            "resource_uri": ""
+        },
+        {
+            "default": null,
+            "description": null,
+            "name": "body",
+            "resource_uri": ""
+        }
+    ],
+    "resource_uri": "/api/dev/concept/1/"
+}
+</code></pre>
+
+		
+<h3 id="method-detail"><a class="permalink" href="#method-detail">Method detail</a></h3>
+		<pre rel="nofollow"><code>http://codecook.io/api/dev/method/2/?username="johndoe"&amp;api_key="g9sda17fgd35sdfg9823as5"</code></pre>
+
+<pre rel="nofollow"><code>{
+    "id": 2,
+    "main_language": "Java",
+    "resource_uri": "/api/dev/method/2/",
+    "snippets": [
+        {
+            "content": "for(int  = ;  &lt; ; ++) {\r\n  System.out.println(\": \" + );\r\n}",
+            "id": 3,
+            "resource_uri": "/api/dev/snippet/3/",
+            "specification": {
+                "id": 3,
+                "name": "Java",
+                "resource_uri": ""
+            }
+        }
+    ],
+    "title": ""
+}
+</code></pre>
+
+	</section>
+</article>
+
+
+			</main>
+			
+		</div>
+
+
+		<footer role="contentinfo">
+			<nav>
+	<ul class="inline-list">
+		<li><a href="http://blog.codecook.io">Blog</a></li>
+		
+		
+		<li><a href="/about-snippet-tool">About</a></li>
+		<li><a href="/license">License</a></li>
+		
+	</ul>
+	<hr />
+
+	<ul class="inline-list">
+		<li><a href="https://twitter.com/codecook_io"
+				class="no-external">
+				<i class="social-color fa fa-lg fa-twitter"></i></a></li>
+
+		<li><a href="https://www.facebook.com/codecook.io"
+				class="no-external">
+				<i class="social-color fa fa-lg fa-facebook"></i></a></li>
+	</ul>
+</nav>
+
+		</footer>
+
+
+	</div>
+	
+
+	
+	
+	
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script>window.angular || document.write('<script src="/static/vendor/angular-1.3.15/angular.min.js"><\/script>')</script>
+
+	<script type="text/javascript" src="/static/CACHE/js/efa980260508.js"></script>
+	
+	<script src="/static/vendor/ace-builds/src-min-noconflict/ace.js"></script>
+	
+
+	
+
+	<script type="text/javascript" src="/static/CACHE/js/973b3d393fa3.js"></script>
+
+	
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53158891-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+</body>
+</html>

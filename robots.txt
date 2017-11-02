@@ -1,0 +1,10 @@
+# robotstxt.org/
+
+User-agent: *
+
+Sitemap: http://codecook.io/sitemap.xml
+
+# No search results
+Disallow: /search/
+Disallow: /en/search/
+Disallow: /nl/search/

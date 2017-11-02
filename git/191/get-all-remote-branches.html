@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+Git - Get all remote branches
+ | CodeCook.io</title>
+	<meta name="description" content="
+Different methods to accomplish 'Get all remote branches' in Git.
+">
+
+	<meta charset="utf-8"/>
+
+	<link rel="shortcut icon" href="/static/favicon/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/static/favicon/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/apple-touch-icon-152x152.png" />
+
+	
+
+	<!--[if lt IE 9]>
+	<script>
+	(function (d, a) {
+	d.documentElement.className = 'lt-ie9'; var l = a.length; while(l-=1){ d.createElement(a[l]); }
+	}(document, ['HEADER', 'NAV', 'TIME', 'SECTION', 'FOOTER', 'ARTICLE', 'MAIN', 'FIGCAPTION', 'FIGURE', 'ASIDE']));
+	</script>
+	<![endif]-->
+
+	<script>(function (e) { e.className = e.className.replace('no-js', 'js'); }(document.documentElement));</script>
+
+	<link rel="stylesheet" href="/static/CACHE/css/01e70f7c834a.css" type="text/css" />
+
+    
+<link rel="stylesheet" href="/static/CACHE/css/78d265f2464a.css" type="text/css" />
+</head>
+<body>
+	
+	<div class="footer-down-wrapper">
+		<div class="content">
+			<header role="banner" class="navbar navbar-inverse">
+				
+
+
+
+
+
+				
+<nav role="navigation">
+	<h2 class="sr-only">Site menu</h2>
+	<div class="navbar-header">
+		<a href="/" class="navbar-brand">
+			<h2 class="navbar-title">CodeCook.io</h2>
+		</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<!--googleoff: index-->
+			<span class="sr-only">Toggle site menu</span>
+			<i class="fa fa-bars"></i>
+			<!--googleon: index -->
+		</button>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					
+						
+							<li>
+								<a href="/specification/7/c/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-c"></div>
+								</span>C</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/2/cplusplus/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-cplusplus"></div>
+								</span>C++</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/11/css/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-css"></div>
+								</span>CSS</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/27/git/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-git"></div>
+								</span>Git</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/16/html/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-html"></div>
+								</span>HTML</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/3/java/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-java"></div>
+								</span>Java</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/5/javascript/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-javascript"></div>
+								</span>JavaScript</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/6/jquery/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-jquery"></div>
+								</span>jQuery</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/8/php/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-php"></div>
+								</span>PHP</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/4/python/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-python"></div>
+								</span>Python</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/29/ruby/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-ruby"></div>
+								</span>Ruby</a>
+							</li>
+						
+					
+						
+							<li>
+								<a href="/specification/28/scala/tasks-and-examples"><span class="nav-icon">
+									<div class="sprite-nav-icons-scala"></div>
+								</span>Scala</a>
+							</li>
+						
+					
+				</ul>
+			</li>
+
+			
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			
+			<li>
+					
+				
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+
+			</header>
+
+			
+
+			
+			<main>
+				
+				<div class="row row-offcanvas row-offcanvas-right">
+					<div class="col-xs-12 col-md-9 col-md-push-3">
+						
+<article class="block" 
+ng-app="snippet"
+>
+	<div class="misc-area pull-right">
+		
+		<div class="tags meta-data">
+			<span class="title"><i class="fa fa-tags" title="Tags"></i></span>
+			<ul class="inline-list">
+				
+					<li><a href="/search/?q=all">all</a></li>
+				
+					<li><a href="/search/?q=branch">branch</a></li>
+				
+					<li><a href="/search/?q=remote">remote</a></li>
+				
+					<li><a href="/search/?q=repository">repository</a></li>
+				
+			</ul>
+		</div>
+		
+
+		
+	</div>
+
+	<h1 class="inline-block">
+		
+		<a href="/specification/27/git/tasks-and-examples">Git</a> -
+		
+		Get all remote branches
+	</h1>
+	
+
+	<div class="user-text">
+		<p>Load all remote branches into local repository</p>
+	</div>
+
+	
+
+    
+
+	
+		 
+		
+
+		
+			
+			
+
+
+<div class="solution" >
+	<div class="group">
+
+		<div class="method-btns pull-right">
+
+			
+			<div class="favorite">
+				
+			</div>
+
+			<div class="vote-btns"> 
+				
+				
+				<a href="/code-snippet-guidelines"
+					class="symbol-btn"
+					title="need more points before can vote">
+				
+					<i class="fa fa-thumbs-o-up"></i></a>
+				<span data-counter title="votes">0</span>
+			</div>
+
+			<div class="views" title="views">
+				<i class="active fa fa-eye"></i>
+				<span data-counter>458</span>
+			</div>
+
+			
+
+			
+			
+
+<div class="share-btns dropdown">
+	<div class="dropdown-toggle"
+	type="button"
+	data-toggle="dropdown"
+	aria-expanded="true"
+	title="Share this">
+		<i class="fa fa-link"></i>
+		<i class="fa fa-caret-down"></i>
+	</div>
+
+	<ul class="dropdown-menu left-dropdown-menu"
+		role="menu"
+		>
+
+		<li role="presentation">
+			<a role="menuitem" href='https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodecook.io%2Fgit%2F191%2Fget-all-remote-branches&t=Get+all+remote+branches' target="_blank" class="no-external">
+			<i class="fa fa-fw fa-facebook"></i> Share on Facebook</a>
+		</li>
+		<li role="presentation">
+			<a role="menuitem" href='https://plus.google.com/share?url=http%3A%2F%2Fcodecook.io%2Fgit%2F191%2Fget-all-remote-branches' target="_blank" class="no-external">
+			<i class="fa fa-fw fa-google-plus"></i> Share on Google+</a>
+		</li>
+		<li role="presentation">
+			
+			<a role="menuitem" href='https://twitter.com/intent/tweet?text=Get+all+remote+branches+-+http%3A%2F%2Fcodecook.io%2Fgit%2F191%2Fget-all-remote-branches&source=http%3A%2F%2Fcodecook.io%2Fgit%2F191%2Fget-all-remote-branches' target="_blank" class="no-external">
+			<i class="fa fa-fw fa-twitter"></i> Share on Twitter</a>
+			
+		</li>
+	</ul>
+</div>
+
+			
+
+		</div>
+
+		<h2 class="h4 inline-block">Pull all remote branches</h2>
+		
+
+	</div>
+	<div class="user-text">
+		<p>List pulled branches with <code>git branch -a</code>. To checkout branch use: <code>git checkout remote/branch</code>.</p>
+	</div>
+
+	
+
+	
+	
+		
+<div itemscope itemtype="http://schema.org/Code">
+	
+
+	
+
+<div
+	
+	class="code-fragment">
+
+	
+	<pre
+		data-ng-prism
+		data-source="git remote update
+git pull --all"
+		class="language- line-numbers"
+
+		id="snippet-434"><code itemprop="sampleType">git remote update
+git pull --all</code></pre>
+
+	<div class="btn-group btn-group-xs">
+		<button type="button" class="btn btn-default select-btn"
+			title="select entire snippet"
+			data-select-target='snippet-434'>select</button>
+		<button type="button" class="btn btn-default copy-btn"
+			title="copy entire snippet to clipboard"
+			data-clipboard-target='snippet-434'>copy</button>
+	</div>
+</div>
+
+	<span class="sr-only" itemprop="programmingLanguage"></span>
+</div>
+	 
+
+	
+	
+
+
+	
+
+
+
+<div class="meta-data unstyle">
+	
+
+
+
+	
+
+	
+
+
+	
+<h3 class="sr-only">Notes</h3>
+
+
+	
+
+
+	<p class="text-right">last update: <time datetime="2014-11-14">Nov. 25, 2014</time></p>
+
+</div>
+
+
+	
+</div>
+
+		
+
+		
+	
+
+</article>
+
+<aside class="block hidden-xs hidden-sm">
+    <p style="color:lightgray;" class="small">Advertisement</p>
+	<p>This project is hosted on <a href="https://m.do.co/c/fdc9dc86e496">DigitalOcean, try it and support us</a></p>
+	
+    
+</aside>
+
+					</div>
+                    <aside role="complementary" class="col-xs-12 col-md-3 col-md-pull-9">
+                        
+
+
+
+
+
+
+
+<aside class="block">
+	<header><h2>Related concept</h2></header>
+
+	<ul class="link-list">
+	
+		<li><a href="/git/55/remove-remote-branch">Remove remote branch</a></li>
+	
+		<li><a href="/git/150/undo-published-commit">Undo published commit</a></li>
+	
+		<li><a href="/git/177/create-git-tag">Create git tag</a></li>
+	
+		<li><a href="/git/143/show-changes-since-laste-commit">Show changes since laste commit</a></li>
+	
+		<li><a href="/git/138/create-new-repository">Create new repository</a></li>
+	
+		<li><a href="/git/214/check-if-specific-commit-is-on-remote">Check if specific commit is on remote</a></li>
+	
+	</ul>
+
+	
+
+</aside>
+
+
+
+
+
+
+
+<aside class="block">
+	<header><h2><i class="fa fa-random"></i> Random task</h2></header>
+	<ul class="link-list">
+		
+		<li><a href="/command-line/12/add-user">Add user</a></li>
+		
+		<li><a href="/git/185/resolve-merge-conflict-with-remote-file">Resolve merge conflict with remote file</a></li>
+		
+		<li><a href="/git/190/list-branches-that-contain-specific-commit">List branches that contain specific commit</a></li>
+		
+		<li><a href="/command-line/172/restart-service">Restart service</a></li>
+		
+		<li><a href="/git/192/overwrite-local-file-changes-on-pull">Overwrite local file changes on pull</a></li>
+		
+	</ul>
+</aside>
+
+
+                    </aside>
+				</div>
+				
+			</main>
+			
+		</div>
+
+
+		<footer role="contentinfo">
+			<nav>
+	<ul class="inline-list">
+		<li><a href="http://blog.codecook.io">Blog</a></li>
+		
+		
+		<li><a href="/about-snippet-tool">About</a></li>
+		<li><a href="/license">License</a></li>
+		
+	</ul>
+	<hr />
+
+	<ul class="inline-list">
+		<li><a href="https://twitter.com/codecook_io"
+				class="no-external">
+				<i class="social-color fa fa-lg fa-twitter"></i></a></li>
+
+		<li><a href="https://www.facebook.com/codecook.io"
+				class="no-external">
+				<i class="social-color fa fa-lg fa-facebook"></i></a></li>
+	</ul>
+</nav>
+
+		</footer>
+
+
+	</div>
+	
+
+	
+	
+	
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script>window.angular || document.write('<script src="/static/vendor/angular-1.3.15/angular.min.js"><\/script>')</script>
+
+	<script type="text/javascript" src="/static/CACHE/js/efa980260508.js"></script>
+	
+	<script src="/static/vendor/ace-builds/src-min-noconflict/ace.js"></script>
+	
+
+	
+
+	<script type="text/javascript" src="/static/CACHE/js/973b3d393fa3.js"></script>
+
+	
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53158891-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+</body>
+</html>
